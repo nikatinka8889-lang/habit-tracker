@@ -1,0 +1,128 @@
+.habitsBlock, h3{
+    font-size: 30px;
+}
+
+.habitsBlock, .progressBlock {
+  margin-top: 20px;
+}
+
+.sectonHabits {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin-top: 15px;
+}
+
+.habitCard {
+  background: white;
+  display: flex;
+  align-items: center;
+  padding: 1.2rem;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.checkbox {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #a7f3d0;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  flex-shrink: 0;
+}
+
+.done .checkbox {
+  background: #4c51bf;
+  border-color: #4c51bf;
+}
+
+.checkMark {
+  color: white;
+}
+
+.habitInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.habitTitle {
+  font-weight: 600;
+  margin: 0;
+  word-break: break-word;
+}
+
+.streak {
+  font-size: 12px;
+  color: #68d391;
+  background: #f0fff4;
+  padding: 2px 8px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.deleteBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  opacity: 0.3;
+  transition: 0.3s;
+  flex-shrink: 0;
+}
+
+.deleteBtn:hover {
+  opacity: 1;
+}
+
+.inputWrapper {
+  position: relative;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.plusIcon {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color: #cbd5e0;
+}
+
+@media (max-width: 768px) {
+  .habitCard {
+    align-items: flex-start;
+  }
+
+  .checkbox {
+    width: 28px;
+    height: 28px;
+  }
+
+  .plusIcon {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .habitCard {
+    gap: 10px;
+    padding: 1rem;
+  }
+
+  .checkbox {
+    width: 26px;
+    height: 26px;
+  }
+
+  .plusIcon {
+    font-size: 20px;
+    left: 16px;
+  }
+}

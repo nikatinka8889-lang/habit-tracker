@@ -1,0 +1,82 @@
+.analytics {
+  position: relative;
+  margin-left: 22rem;
+  padding: clamp(1.5rem, 4vw, 4.5rem);
+  max-width: 72rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.analytics header {
+  font-size: clamp(20px, 2.5vw, 28px);
+  color: var(--text-muted);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.block {
+  width: 100%;
+  max-width: 700px;
+}
+
+.analyticsGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto 1fr;
+  gap: clamp(1rem, 3vw, 2rem);
+  margin-top: 2rem;
+}
+
+.statsCards {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: clamp(1rem, 2vw, 1.7rem);
+  flex-wrap: wrap;
+}
+
+.progressBlock {
+  grid-column: 1 / 2;
+}
+
+.habitsBlock {
+  grid-column: 2 / 3;
+}
+
+@media (max-width: 1024px) {
+  .analytics {
+    margin-left: 18rem;
+  }
+
+  .analyticsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .progressBlock,
+  .habitsBlock {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .analytics {
+    margin-left: 0;
+    padding: 1.5rem;
+  }
+
+  .statsCards {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .analytics {
+    padding: 1rem;
+  }
+
+  .analytics header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

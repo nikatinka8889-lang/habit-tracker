@@ -1,0 +1,11 @@
+
+
+.LogOutButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;  
+    &:hover {
+        transform: scale(1.1);
+    }
+}

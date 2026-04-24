@@ -1,0 +1,35 @@
+
+
+.link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: var(--text-on-dark);
+  margin-top: 55px;
+  gap: 15px;
+  font-size: 25px;
+  width: 200px;
+  height: 48px;
+    padding-left: 10px;
+    transition: 0.4s;
+    &:hover{
+      transform: scale(1.1);
+      background-color: var(--sidebar-active);
+      border-radius: 10px;
+    }
+}
+.link a {
+  text-align: center;
+
+
+}
+.link img {
+    width: 35px;
+    height: 35px;
+}
+
+.active {
+background-color: var(--sidebar-active);
+border-radius: 10px;
+
+}

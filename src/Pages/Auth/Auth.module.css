@@ -1,0 +1,124 @@
+.container {
+        width: 100%;
+        height: auto;
+            background-color: #F7F7F2;
+                margin: auto;
+    border-radius: 15px;
+    padding: 0 120px ;
+    position: relative;
+    display: flex;
+    
+}
+
+.photoContainer {
+    width: 43.5%;
+    height: 725px;
+    margin: auto;
+}
+
+.photoContainer img {
+    width: 125%;
+    height: 100%;
+    object-fit: cover;
+}
+.containerLogin {
+    position: relative;
+    left: 100px;
+    margin:auto;
+    width: 50%;
+    height: 100%;
+}
+
+.titleCloud{
+    width: 55%;
+    position: relative;
+    top: -90px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    color: var(--accent-primary);
+    font-size: 30px;
+}
+
+
+.halloHabit {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    position: relative;
+    top: -50px;
+
+}
+.halloHabit span{
+    display: inline-block;
+    max-width: 350px;
+    letter-spacing: 1px;
+}
+.halloHabit p{
+    font-size: 40px;
+        max-width: 340px;
+}
+
+.authForm {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+    top: -40px;
+}
+
+.authForm button {
+    margin-top: 10px;
+    width: 350px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #9DE0C1;
+    color: #1F265D ;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.authForm input {
+    max-width: 350px;
+    padding: 13px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: 1px solid #E0E0E0 ;
+    color: #1F265D;
+}
+
+.forgotPassword {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 360px;
+    color:#4A4A8F;
+    cursor: pointer;
+    font-size: 18px;
+    position: relative;
+    top: -28px;
+}
+
+.noAccount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 340px;
+    font-size: 18px;
+}
+.noAccount span {
+    cursor: pointer;
+    color:#4A4A8F;
+
+}
+
+
+
