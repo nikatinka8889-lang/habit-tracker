@@ -4,7 +4,12 @@ import ImageLink from "../ImageLink/ImageLink";
 import LogOut from "../LogOut/LogOut";
 import { auth } from "../../firebase/firebase";
 import { onAuthStateChanged } from "firebase/auth";
-
+import cloudSvg from "/src/assets/Images/cloud.svg"
+import imageDashboard from  "/src/assets/Images/dashboard-5481.svg"
+import imageAnalitycs from "/src/assets/Images/chart_18432151.png"
+import imageSettings from "/src/assets/Images/settings-171.svg"
+import imageRegister from "/src/assets/Images/user_10977431.png"
+import imageLogin from "/src/assets/Images/user-profile_5645043.png"
 export default function AsideBar() {
   const [user, setUser] = useState(null);
   const [open, setOpen] = useState(false);
@@ -32,7 +37,7 @@ export default function AsideBar() {
         <div className={asideBarCss.sidebarHeader}>
           <div className={asideBarCss.logo}>
             <img
-              src="/src/assets/Images/cloud.svg"
+              src={cloudSvg}
               alt="cloudHabit"
               width="70"
               height="70"
@@ -45,20 +50,20 @@ export default function AsideBar() {
         </div>
 
         <nav onClick={() => setOpen(false)}>
-          <ImageLink to={"/"} src={"/src/assets/Images/dashboard-5481.svg"}>
+          <ImageLink to={"/"} src={imageDashboard}>
             Dashboard
           </ImageLink>
 
           <ImageLink
             to={"/analitycs"}
-            src={"/src/assets/Images/chart_18432151.png"}
+            src={imageAnalitycs}
           >
             Analitycs
           </ImageLink>
 
           <ImageLink
             to={"/settings"}
-            src={"/src/assets/Images/settings-171.svg"}
+            src={imageSettings}
           >
             Settings
           </ImageLink>
@@ -69,14 +74,14 @@ export default function AsideBar() {
             <>
               <ImageLink
                 to={"/register"}
-                src={"/src/assets/Images/user_10977431.png"}
+                src={imageRegister}
               >
                 Register
               </ImageLink>
 
               <ImageLink
                 to={"/login"}
-                src={"/src/assets/Images/user-profile_5645043.png"}
+                src={imageLogin}
               >
                 Login
               </ImageLink>

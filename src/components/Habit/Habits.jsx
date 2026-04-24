@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import habitsCss from "./habits.module.css";
 import { useDispatch, useSelector } from "react-redux";
-
+import imageBacket from "/src/assets/Images/backet.png"
 import {
   fetchHabits,
   toggleHabitFirebase,
@@ -91,7 +91,7 @@ export default function Habits({ children }) {
                 disabled={deletingIds.includes(habit.id)}
               >
                 <img
-                  src="/src/assets/Images/backet.png"
+                  src={imageBacket}
                   alt="delete"
                   width="18"
                 />

@@ -4,7 +4,7 @@ import logOutcss from './logOut.module.css'
 import { logoutSuccess } from "../../redux/slices/authSlice";
 import { useDispatch } from "react-redux";
 import { toast } from "react-toastify";
-
+import imageLogOut from "/src/assets/Images/log-out-40.svg"
 export default function LogOut() {
   const dispatch = useDispatch();
 
@@ -19,6 +19,6 @@ export default function LogOut() {
   };
 
   return (
-    <button className={logOutcss.LogOutButton} onClick={handleLogout}><img  src="/src/assets/Images/log-out-40.svg" alt=""  width='100'/></button>
+    <button className={logOutcss.LogOutButton} onClick={handleLogout}><img  src={imageLogOut} alt="logOut"  width='100'/></button>
   );
 }
